@@ -9,7 +9,7 @@ function MsgController($scope) {
   $scope.message = "";
   $scope.items = "";
 
-  $scope.feedYaakov = function () {
+  $scope.countItems = function () {
     var commas = $scope.items.split(",").length || 0;
 
     if ($scope.items.length === 0) {
