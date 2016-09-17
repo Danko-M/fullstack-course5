@@ -3,8 +3,6 @@
 	<head>
 		<title>Lunch Checker</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="js/angular.min.js"></script>
-		<script src="js/app.js"></script>
 		<link rel="stylesheet" href="styles/bootstrap.min.css">
 		<style>
 			.message { font-size: 1.3em; font-weight: bold; }
@@ -12,7 +10,7 @@
 	</head>
 <body>
 
-	<div class="container" ng-controller='MsgController'>
+	<div class="container" ng-controller='LunchCheckController'>
 		<h1>Lunch Checker</h1>
 		
 		<div class="form-group">
@@ -33,6 +31,9 @@
 		</div>
 
 	</div>
+	
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
 
 </body>
 </html>
