@@ -27,11 +27,12 @@
 
 		<div class="form-group message">
 		  <!-- Your message can go here. -->
-		  {{ message }}
+		  <span class="text-danger">{{ messageError }}</span>
+		  <span class="text-success">{{ messageSuccess }}</span>
 		</div>
 
 	</div>
-	
+
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
 
