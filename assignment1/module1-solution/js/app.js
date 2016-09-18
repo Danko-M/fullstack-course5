@@ -6,22 +6,24 @@ angular.module('MsgApp', [])
 
 LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope) {
-  $scope.messageError = "";
-  $scope.messageSuccess = "";
+  $scope.message = "";
   $scope.items = "";
 
   $scope.countItems = function () {
     var commas = $scope.items.split(",").length || 0;
 
     if ($scope.items.length === 0) {
-      $scope.messageError = "Please enter data first"; 
-      $scope.messageSuccess = "";
+      $scope.message = "Please enter data first";
+      $scope.color = "color:#ff0000";
+      $scope.borderColor = "border-color:#ff0000"; 
     } else if (commas <= 3){
-      $scope.messageSuccess = "Enjoy!";
-      $scope.messageError = "";
+      $scope.message = "Enjoy!";
+      $scope.color = "color:#00ff00";
+      $scope.borderColor = "border-color:#00ff00";
     } else if (commas > 3){
-      $scope.messageSuccess = "Too much!";
-      $scope.messageError = "";
+      $scope.message = "Too much!";
+      $scope.color = "color:#00ff00";
+      $scope.borderColor = "border-color:#00ff00";
     }
   };
 
