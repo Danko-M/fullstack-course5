@@ -47,7 +47,6 @@ angular.module('ShoppingListCheckOff', [])
 
       if (boughtItems.length > 0) {
         nothingBought = false;
-        console.log(nothingBought);
       }; 
     };
 
